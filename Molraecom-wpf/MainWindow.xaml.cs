@@ -1,13 +1,16 @@
-﻿namespace Molraecom_wpf
+﻿using System.Windows.Input;
+
+namespace Molraecom_wpf
 {
-  /// <summary>
-  /// Interaction logic for MainWindow.xaml
-  /// </summary>
-  public partial class MainWindow
-  {
-    public MainWindow()
+    /// <summary>
+    ///     Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow
     {
-      InitializeComponent();
+        public MainWindow()
+        {
+            InitializeComponent();
+            Cursor = Cursors.None;
+        }
     }
-  }
 }
