@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Molraecom_wpf"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>

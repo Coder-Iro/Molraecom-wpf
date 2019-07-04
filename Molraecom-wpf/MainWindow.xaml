@@ -5,12 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Molraecom_wpf"
         mc:Ignorable=""
-        Title="MainWindow" Height="1080" Width="1920" Background="Black"
+        Title="MainWindow"
+        Width="1920"
+        Height="1080"
+        Background="Black"
         ResizeMode="NoResize"
         Topmost="True"
         WindowStyle="None"
         Top="0"
         Left="0"
-        WindowStartupLocation="Manual">
+        WindowStartupLocation="Manual"
+        Loaded="MainWindow_OnLoaded">
     <Grid />
 </Window>
