@@ -15,6 +15,7 @@ namespace Molraecom_wpf
         public MainWindow()
         {
             InitializeComponent();
+            Visibility = Visibility.Hidden;
             Cursor = Cursors.None;
         }
 
