@@ -15,7 +15,6 @@ namespace Molraecom_wpf
         public MainWindow()
         {
             InitializeComponent();
-            Hide();
             Cursor = Cursors.None;
         }
 
@@ -23,13 +22,13 @@ namespace Molraecom_wpf
         {
             if (HookEventArgs.Control && HookEventArgs.Alt && HookEventArgs.Key == Keys.K)
             {
-                if (this.Visibility == Visibility.Hidden)
+                if (Visibility == Visibility.Hidden)
                 {
-                    Show();
+                    Visibility = Visibility.Visible;
                 }
                 else
                 {
-                    Hide();
+                    Visibility = Visibility.Hidden;
                 }
             }
         }
@@ -37,7 +36,7 @@ namespace Molraecom_wpf
         private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
         {
             Focus();
-            _hook.KeyDown += new KeyboardHook.HookEventHandler(OnHookKeyDown);
+            _hook.KeyDown += OnHookKeyDown;
         }
 
         
