@@ -34,7 +34,7 @@ namespace Molraecom_wpf
                 }
             }
         }
-        private void OnKeyDownHandler(object sender, KeyEventArgs e)
+        private void OnKeyDownHandler(object sender, System.Windows.Input.KeyEventArgs e)
         {
             if ((Keyboard.IsKeyDown(Key.LeftCtrl) && Keyboard.IsKeyDown(Key.LeftAlt) && Keyboard.IsKeyDown(Key.R)))
             {
