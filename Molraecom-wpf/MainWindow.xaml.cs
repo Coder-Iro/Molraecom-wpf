@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Forms;
 using Application = System.Windows.Application;
@@ -33,7 +33,21 @@ namespace Molraecom_wpf
                 }
             }
         }
-
+        private void OnKeyDownHandler(object sender, KeyEventArgs e)
+        {
+            if ((Keyboard.IsKeyDown(Key.LeftCtrl) && Keyboard.IsKeyDown(Key.LeftAlt) && Keyboard.IsKeyDown(Key.R)))
+            {
+                if (Visibility == Visibility.Hidden)
+                {
+                    Visibility = Visibility.Visible;
+                    Focus();
+                }
+                else
+                {
+                    Visibility = Visibility.Hidden;
+                }
+            }
+        }
         private void MainWindow_OnLoaded(object sender, RoutedEventArgs e)
         {
             Focus();
