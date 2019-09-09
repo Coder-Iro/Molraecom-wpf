@@ -21,7 +21,7 @@ namespace Molraecom_wpf
 
         private void OnHookKeyDown(object sender, HookEventArgs e)
         {
-            if (HookEventArgs.Control && HookEventArgs.Alt && HookEventArgs.Key == Keys.K)
+            if (HookEventArgs.Control && HookEventArgs.Alt && HookEventArgs.Key == Keys.N)
             {
                 if (Visibility == Visibility.Hidden)
                 {
