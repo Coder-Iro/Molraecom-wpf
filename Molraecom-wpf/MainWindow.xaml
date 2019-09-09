@@ -16,6 +16,7 @@
         Left="0"
         WindowStartupLocation="Manual"
         KeyDown="OnKeyDownHandler"
-        Loaded="MainWindow_OnLoaded">
+        Loaded="MainWindow_OnLoaded"
+        Closing="Window_Closing">
     <Grid />
 </Window>
