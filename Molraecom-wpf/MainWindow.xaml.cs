@@ -54,6 +54,11 @@ namespace Molraecom_wpf
             Focus();
             _hook.KeyDown += OnHookKeyDown;
         }
+        private override void OnClosing( object sender, CancelEventArgs e )
+        {
+            e.Cancel = true;
+            //Do whatever you want here..
+        }
 
         
     }
